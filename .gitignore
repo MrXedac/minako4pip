@@ -1,52 +1,70 @@
-# Prerequisites
-*.d
-
-# Object files
+build
+makefile.dep
+doc/html
+doc/latex
 *.o
-*.ko
-*.obj
+*.hi
+doc/hs
+*.legacy
+*.bin
+*.iso
+*.map
 *.elf
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Coq
+makefile.autocoq
+*.aux
+*.v.d
+*.vo
+*.glob
+*.crashcoqide
+\#*\#
+*.vio
 
-# Precompiled Headers
-*.gch
-*.pch
+# Misc
+*.json
+*.tar
+*.pcap
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Ignore documentation
+*.html
+*.htm
+*.css
+doc/UserGuide/UserGuide.lol
+doc/c-doc/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Mac OSX-related files
+.DS_Store
 
-# Executables
-*.exe
+# Toolchain configuration
+src/partitions/*/toolchain.mk
+
+# Internal.h is regenerated with each compilation
+Internal.h
+git.h
+
+# Latex
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
 *.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+*.synctex.gz
+*.pdf
